@@ -14,13 +14,12 @@ class Dog
   end
 
   def self.print_all
-    @@all.each do |dog|
-      puts dog
-    end
+    return @@names
   end
 
   def save(name)
     @@all << self
+    @@names << name
   end
 
 end
